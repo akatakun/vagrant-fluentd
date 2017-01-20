@@ -9,8 +9,8 @@ Vagrant.configure('2') do |config|
   config.vm.box = 'base'
 
   config.vm.define 'fluentd' do |vagrant|
-    vagrant.vm.box_url = './ubuntu-12-10-virtualbox.box'
-    vagrant.vm.box = 'Ubuntu12.10'
+    vagrant.vm.box_url = './ubuntu-14-04-x64-virtualbox.box'
+    vagrant.vm.box = 'Ubuntu14.04'
     vagrant.vm.network :private_network, ip: '192.168.56.10'
   end
 end
